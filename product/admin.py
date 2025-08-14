@@ -3,7 +3,7 @@ from. models import Sarees
 
 @admin.register(Sarees)
 class SareeAdmin(admin.ModelAdmin):
-  fields = ["category", "description", "price", "image"]
+  fields = ["name","category", "description", "price", "image"]
 
 
 
