@@ -11,6 +11,7 @@ class Sarees (models.Model):
     image = models.ImageField(upload_to='sarees/')  
 
     def __str__(self):
-        return self.name
+        return self.name.upper()  # will crash if name is None
+
 
 
